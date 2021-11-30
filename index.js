@@ -107,11 +107,21 @@ camera.position.z = 300;
 camera.position.y = 300;
 camera.position.x = 1;
 
-function animate() {
+function onWindowResize() {
 
-  renderer.setAnimationLoop( ()=>{
-    renderer.render( scene, camera );
-  });
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
 
+  renderer.setSize( window.innerWidth, window.innerHeight );
 }
+
+function animate() {
+  
+  renderer.setAnimationLoop( render );
+
+  }
+
+  function render() {
+    renderer.render(scene, camera);
+  }
 animate();
