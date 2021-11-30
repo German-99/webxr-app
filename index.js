@@ -45,7 +45,7 @@ scene.add( light );
 const loader = new GLTFLoader();
 
 
-loader.load( './dist/models/Eduardo_4.gltf', 
+loader.load( '/models/Eduardo_4.gltf', 
  ( gltf ) => {
 
   scene.add( gltf.scene );
@@ -64,7 +64,7 @@ loader.load( './dist/models/Eduardo_4.gltf',
 
 });
 
-loader.load( './dist/models/casa_4.gltf', 
+loader.load( '/models/casa_4.gltf', 
  ( gltf ) => {
 
   scene.add( gltf.scene );
@@ -83,7 +83,7 @@ loader.load( './dist/models/casa_4.gltf',
 
 });
 
-loader.load( './dist/models/jarron.gltf', 
+loader.load( '/models/jarron.gltf', 
  ( gltf ) => {
 
   scene.add( gltf.scene );
@@ -102,7 +102,7 @@ loader.load( './dist/models/jarron.gltf',
 
 });
 
-loader.load( './dist/models/mesa.gltf', 
+loader.load( '/models/mesa.gltf', 
  ( gltf ) => {
 
   scene.add( gltf.scene );
