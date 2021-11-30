@@ -21,7 +21,7 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 //const cube = new THREE.Mesh( geometry, material );
 //scene.add( cube );
 
-const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 0.6 );
 scene.add( light );
 
 const loader = new GLTFLoader();
