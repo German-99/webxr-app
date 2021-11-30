@@ -12,15 +12,7 @@ renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.xr.enabled = true;
 container.appendChild( renderer.domElement );
 
-const onWindowResize = ()=>{
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-
-  renderer.setSize(window.innerWidth, window.innerHeight );
-}
-
 window.addEventListener( 'resize', onWindowResize );
-
 
 document.body.appendChild( VRButton.createButton( renderer ) );
 
@@ -111,9 +103,9 @@ loader.load( '/models/mesa.gltf',
 
 });
 
-/*camera.position.z = 300;
+camera.position.z = 300;
 camera.position.y = 300;
-camera.position.x = 1;*/
+camera.position.x = 1;
 
 function animate() {
 
