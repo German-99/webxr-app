@@ -10,7 +10,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.outputEncoding = THREE.sRGBEncoding;
 renderer.xr.enabled = true;
-container.appendChild( renderer.domElement );
+document.body.appendChild( renderer.domElement );
 
 window.addEventListener( 'resize', onWindowResize );
 
