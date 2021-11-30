@@ -103,9 +103,8 @@ loader.load( '/models/mesa.gltf',
 
 });
 
-camera.position.z = 300;
-camera.position.y = 300;
-
+camera.position.z = 3;
+camera.position.y = 1;
 
 function onWindowResize() {
 
